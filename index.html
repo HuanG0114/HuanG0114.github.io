@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣身分證字號驗證</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>台灣身分證字號驗證</h1>
+        <div class="input-group">
+            <input type="text" 
+                   id="idInput" 
+                   placeholder="請輸入身分證字號" 
+                   maxlength="10"
+                   autocomplete="off">
+            <button onclick="checkID()">驗證</button>
+        </div>
+        <div id="result" class="result"></div>
+        
+        <div class="format-info">
+            <h3>格式說明：</h3>
+            <ul>
+                <li>第一碼為英文字母（A-Z）</li>
+                <li>第二碼為性別（1為男性，2為女性）</li>
+                <li>後面八碼為數字</li>
+                <li>總長度為10碼</li>
+            </ul>
+        </div>
+    </div>
+    <script src="idValidator.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
